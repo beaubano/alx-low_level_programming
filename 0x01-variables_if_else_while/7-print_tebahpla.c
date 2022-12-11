@@ -6,11 +6,11 @@
 */
 int main(void)
 {
-	char n = 'a';
+	int n = 'a';
 
 	while (n >= 'z')
 	{
-		putchar(a);
+		putchar(n);
 		n--;
 	}
 	putchar('\n');
