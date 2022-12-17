@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main -main function 
+ * main - main function to print single digit 
  * Return: Always 0
-*/
+ */
 int main(void)
 {
 
@@ -16,4 +16,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+
 }
