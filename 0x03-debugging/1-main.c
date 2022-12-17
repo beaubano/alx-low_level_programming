@@ -11,6 +11,8 @@ int i;
 
 printf("Infinite loop incoming :(\n");
 
+printf("don’t delete it!\\o/\n");
+
 i = 0;
 
 while (i < 10)
@@ -19,7 +21,6 @@ while (i < 10)
 }
 
 printf("Infinite loop avoided! \\o/\n");
-printf("don’t delete it!\\o/\n");
 
 return (0);
 }
