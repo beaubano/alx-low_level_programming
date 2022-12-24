@@ -1,1 +1,3 @@
-My read me file for 0x06-pointers_arrays_strings
+Readme for this Projects.
+Pointers array and strings.
+Various task completed
