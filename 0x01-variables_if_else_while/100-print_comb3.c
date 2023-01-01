@@ -1,23 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - A program that prints all numbers 00-99
+ * main - A program that prints all possible different combinations of two digits
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num;
+	int num = 0;
+	int i;
+	int count = 0;
 
-	for (num = 0; num < 99 ; num++)
+	while (num <= 8)
 	{
-		putchar((num / 10) + '0');
-		putchar((num % 10) + '0');
-		if (num != 99)
+		i = num + 1;
+	while (i <= 9)
+	{
+
+		putchar(num + '0');
+		putchar(i + '0');
+		if (count != 44)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+		i++;
+		count++;
+	}
+	num++;
+
 	}
 	putchar('\n');
 	return (0);
