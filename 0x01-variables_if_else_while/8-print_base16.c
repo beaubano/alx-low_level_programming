@@ -9,10 +9,15 @@
 int main(void)
 {
 	int a;
+	char chara;
 
 	for (a = 0; a <= 16; a++)
 	{
 		putchar(a + '0');
+	}
+	for (chara = 'a' ; chara <= 'f' ; chara++)
+	{
+		putchar(chara);
 	}
 	putchar('\n');
 	return (0);
