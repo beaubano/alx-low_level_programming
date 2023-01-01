@@ -7,28 +7,35 @@
  */
 int main(void)
 {
-	int num = 0;
-	int t;
-	int o;
+	int i = 0;
+	int j, k;
+	int count = 0;
 
-	while (num <= 99)
+	while (i <= 7)
 	{
-		t = num % 10;
-		o = num / 10;
+		j = i + 1;
 
-		if (o < t)
+		while (j <= 8)
 		{
-			putchar(o + '0');
-			putchar(t + '0');
-			if (num < 89)
+			k = j + 1;
+
+			while (k <= 9)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (count != 119)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				k++;
+				count++;
 			}
+			j++;
 		}
-		num++;
+		i++;
 	}
 	putchar('\n');
-
 	return (0);
 }
